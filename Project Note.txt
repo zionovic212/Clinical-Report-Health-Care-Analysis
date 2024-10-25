@@ -1,0 +1,41 @@
+Business Problem:
+- Evaluate the average waiting time of patient
+- Patient visit on monthly basis
+- Total visit by department referral
+- Breakdown patients visit by group
+- Determine the average satifaction by age-grop
+- Determine the average wait time by age-group and patient race
+
+
+About the Data:
+This is a clinical data from an anonymouse hospital database
+
+Date:
+
+Patient_sat_score: The number of patient who decided to leave rating for the clinic. 
+Patient_Admin_flag: 
+
+
+Data Dictionary: Is a document that shows the meaning of each columns of the dataset. With these document, anyone who can understand the meaning of the column headers in the dataset.
+
+
+-Data Operations-
+Create a new column named Time period
+Change the data type of the date column from date & time to--> date
+
+
+Percentage_True = 
+    DIVIDE(
+        COUNTROWS(
+            FILTER(
+                'Patient dataset', 
+                'Patient dataset'[patient_admin_flag] = TRUE()
+            )
+        ),
+        COUNTROWS('Patient dataset')
+    )
+
+Color codes:
+01575C
+D3E8EA
+EFB5B9
